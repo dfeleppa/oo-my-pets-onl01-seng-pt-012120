@@ -24,7 +24,7 @@ class Owner
     "I am a #{self.species}."
   end
   
-  def self.cats
+  def cats
     Owner.all.select {|cat| cat.owner == self}
   end  
   
